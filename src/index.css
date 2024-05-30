@@ -1,0 +1,10 @@
+@import url("colors.css");
+html {
+    background-color: var(--dark);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+

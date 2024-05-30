@@ -1,0 +1,61 @@
+.principalContainer{
+    background: linear-gradient(to bottom, #ffffff01, var(--transparentdark) 45%);
+    font-size: clamp(0.6rem, 0.1rem + 1vw, 1.5vw);
+}
+
+.profileCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+    position: relative;
+    gap: 2svw;
+    padding: 4rem;
+}
+
+.backgroudImage{
+    width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(60%);
+    object-fit: cover;
+}
+
+.picContainer{
+    display: flex;
+    width: 20%;
+}
+
+.picture{
+    border-radius: 50%;
+    display: flex;
+    width: 100%;
+}
+
+.descriptionContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+
+.name{
+    margin: 0;
+}
+
+.title{
+    margin: 0;
+    color: var(--color);
+}
+
+.marks{
+    color: var(--color);
+    background:none;
+}
+
+.descriptionContainer p a{
+    color: var(--color);
+}
