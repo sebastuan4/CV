@@ -3,7 +3,9 @@ import React, { useEffect } from 'react';
 function Header(){
     const currentUrl = window.location.pathname;
     useEffect (() => {
+        console.log(currentUrl);
         document.getElementById(currentUrl).classList.add(styles["active"])
+        
     }, []);
     
 
@@ -11,10 +13,10 @@ function Header(){
         <header>
             <div className={styles.mainContainer}>
                 <div className={styles.navList}>
-                        <a id='/' href="/">About Me</a>
-                        <a id='/dev' href="/dev">Developing</a>
-                        <a id='/pentest' href="/pentest">Pentesting</a>
-                        <a id='/work' href="work">Working Experience</a>
+                        <a id='/CV/' href="/CV/">About Me</a>
+                        <a id='/CV/dev' href="/CV/dev">Developing</a>
+                        <a id='/CV/pentest' href="/CV/pentest">Pentesting</a>
+                        <a id='/CV/work' href="/CV/work">Working Experience</a>
                 </div>
             </div>
         </header>
