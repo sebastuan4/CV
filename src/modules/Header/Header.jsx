@@ -1,11 +1,12 @@
-import styles from './Header.module.css'
+import styles from './Header.module.css';
 import React, { useEffect } from 'react';
+import { Link } from "react-router-dom";
+
 function Header(){
-    const currentUrl = window.location.pathname;
+    const currentHash = window.location.hash;
     useEffect (() => {
-        console.log(currentUrl);
-        document.getElementById(currentUrl).classList.add(styles["active"])
-        
+        console.log(currentHash)
+        document.getElementById(currentHash).classList.add(styles["active"])
     }, []);
     
 
@@ -13,10 +14,10 @@ function Header(){
         <header>
             <div className={styles.mainContainer}>
                 <div className={styles.navList}>
-                        <a id='/CV/' href="/CV/">About Me</a>
-                        <a id='/CV/dev' href="/CV/dev">Developing</a>
-                        <a id='/CV/pentest' href="/CV/pentest">Pentesting</a>
-                        <a id='/CV/work' href="/CV/work">Working Experience</a>
+                        <Link id='#/' to="/">About Me</Link>
+                        <Link id='#/dev' to="/dev">Developing</Link>
+                        <Link id='#/pentest' to="/pentest">Pentesting</Link>
+                        <Link id='#/work' to="/work">Working Experience</Link>
                 </div>
             </div>
         </header>
