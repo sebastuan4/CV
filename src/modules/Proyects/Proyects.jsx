@@ -1,5 +1,6 @@
 import styles from './Proyects.module.css'
 import React, {useState} from 'react'
+import { Link } from "react-router-dom";
 function Proyects(){
     const fondos = [
         "https://i.pinimg.com/564x/7a/37/57/7a3757ced4d067d87e8fe8de70a33ad1.jpg",
@@ -43,10 +44,8 @@ function Proyects(){
                         {descriptions[index].split('\n').map((line, index) => (
                             <p key={index}>{line}</p>
                         ))}
-                        <button>Want to know more?</button>
+                        <Link className={styles.callForAction} to="/dev">Want to know more?</Link>
                     </div>
-
-
             </div>
         </div>
     ); 

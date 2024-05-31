@@ -22,26 +22,6 @@
 }
 
 
-
-.description{
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(to bottom, #ffffff09, var(--transparentdark) 60%);
-    position: relative;
-    width: 40%;
-    min-height: 500px;
-    justify-content: flex-end;
-}
-
-
-.descriptionText{
-    padding: 1rem;
-    font-size: clamp(0.6rem, 0.1rem + 1vw, 1.5vw);
-    text-wrap: wrap;
-}
-
-
-
 .buttonContainer Button{
     text-align: left;
     font-size: clamp(0.6rem, 0.1rem + 1vw, 1.5vw);
@@ -66,6 +46,28 @@
     background-color: var(--color);
 }
 
+
+.description{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #ffffff09, var(--transparentdark) 60%);
+    position: relative;
+    min-height: 400px;
+    width: 40%;
+    justify-content: flex-end;
+}
+
+
+.descriptionText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: clamp(0.6rem, 0.1rem + 1vw, 1.5vw);
+    text-wrap: wrap;
+}
+
 .description img{
     position: absolute;
     object-fit: cover;
@@ -77,18 +79,30 @@
 }
 
 
-.description button{
-    text-align: center;
+.callForAction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.5vw;
-    width: 100%;
+    width: 60%;
     height: 3vw;
-    display: block;
     background-color: var(--mid);
     color: var(--text);
-    margin-bottom: 1.5vh;
-    padding-left: 2vw;
     border: 1px solid transparent;
     border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
     border-image-slice: 1;
 }
 
+@media only screen and (max-width: 750px){
+    .main{
+        flex-direction:column;
+        align-items: center;
+    }
+    .description{
+        width: 80%;
+        min-height: 300px;
+    }
+    .menuContainer{
+        width: 80%;
+    }
+}

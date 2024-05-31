@@ -1,5 +1,8 @@
 import styles from './Footer.module.css'
 import React, { useState } from 'react';
+import githubIcon from "../../assets/Images/github.png"
+import linkedinIcon from "../../assets/Images/linkedin.png"
+import whatsappIcon from "../../assets/Images/whatsapp.png"
 
 function Footer(){
 
@@ -30,9 +33,9 @@ function Footer(){
                             <button onClick={sendEmail}>Email</button>
                         </div>
                         <div className={styles.info}>
-                            <p><a href="https://wa.me/50661956271">Whatsapp</a></p>
-                            <p><a href="www.linkedin.com/in/sebastian-alvarado-rojas-654496149">Linkedin</a></p>
-                            <p><a href="https://github.com/sebastuan4">Github</a></p>
+                            <p><a href="https://wa.me/50661956271"><img src={whatsappIcon} alt="" /></a></p>
+                            <p><a href="www.linkedin.com/in/sebastian-alvarado-rojas-654496149"><img src={linkedinIcon} alt="" /></a></p>
+                            <p><a href="https://github.com/sebastuan4"><img src={githubIcon} alt="" /></a></p>
                         </div>
                     </div>
             </div>

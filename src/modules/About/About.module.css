@@ -1,6 +1,6 @@
 .principalContainer{
     background: linear-gradient(to bottom, #ffffff01, var(--transparentdark) 45%);
-    font-size: clamp(0.6rem, 0.1rem + 1vw, 1.5vw);
+    font-size: clamp(0.6rem, 0.1rem + 1vw, 1vw);
 }
 
 .profileCard{
@@ -54,8 +54,22 @@
 .marks{
     color: var(--color);
     background:none;
+    font-size: clamp(0.6rem, 0.1rem + 1vw, 2rem);
 }
 
 .descriptionContainer p a{
     color: var(--color);
+}
+
+@media only screen and (max-width:600px){
+    .descriptionContainer{
+        width: 100%;
+    }
+    .picContainer{
+    display: flex;
+    width: 100%;
+    }
+    .profileCard{
+        padding: 1rem;
+    }
 }

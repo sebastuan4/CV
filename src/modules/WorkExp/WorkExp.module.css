@@ -2,18 +2,20 @@
     display: flex;
     color: var(--text);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: clamp(0.6rem, 0.1rem + 1vw, 1.5vw);
+    font-size: clamp(0.6rem, 0.1rem + 1vw, 1rem);
+    align-items: center;
+    justify-content: center;
 }
 
 .contentdiv{
     display: flex;
     justify-content: center;
     align-items:center;
+    width: 75%;
 }
 
 .textdiv{
     padding: 2vw;
-    width: 50%;
 }
 
 .textdiv h2{
@@ -22,21 +24,18 @@
     line-height: 100%;
 }
 
-.textdiv p{
-    margin-left: 2vw;
-}
-
 .imagediv{
     display: flex;
 }
 
 .imagediv img{
-    width: 150px;
+    width: clamp(2rem, 0.1rem + 15vw, 30rem);
     border-radius: 50%;
 }
 
-mark{
-    font-size: 1.2vw;
-    color: var(--text);
+.textdiv mark{
+    font-size: clamp(0.6rem, 0.1rem + 1vw, 1rem);
+    color: var(--color);
     background:none;
 }
+

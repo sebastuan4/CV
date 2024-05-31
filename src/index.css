@@ -1,6 +1,7 @@
 @import url("colors.css");
 html {
     background-color: var(--dark);
+    color: var(--text);
 }
 
 body {

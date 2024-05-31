@@ -1,5 +1,7 @@
 import styles from './Developing.module.css'
+
 function Developing(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     return(
         <div className={styles.mainDiv}>
             <div className={styles.mainDiv}> 
@@ -23,45 +25,9 @@ function Developing(){
                         <p><mark>React</mark><mark>HTML</mark><mark>CSS</mark><mark>JS</mark></p>
                         <a href="https://github.com/sebastuan4/CV">Look at the Github repository.</a>
                     </div>
-                    </div>
-                    <h1>Certifications</h1>
-                    <div className={styles.certContainer}>
-                        <div className={styles.cert}>
-                            <div className={styles.imageContainer}>
-                                <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-75b99bd3-5697-4e26-aa7f-73d81c4f5a47.jpg?v=1675877991000" alt="" />
-                            </div>
-                            <div className={styles.textContainer}>
-                                <p>
-                                Certification in SQL Mastery: Mastered SQL coding, MySQL database management, and advanced techniques in data manipulation, query optimization, and database design, equipped for roles such as SQL developer, Database Administrator, and Business Analyst.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className={styles.cert}>
-                        <   div className={styles.imageContainer}>
-                                <img src="https://images.credly.com/size/340x340/images/978f88dc-c247-4093-9d39-6efac3651297/image.png" alt="" />
-                            </div>
-                            <div className={styles.textContainer}>
-                                <p>
-                                Cisco verifies the earner of this badge successfully completed the Networking Technician career path and achieved this student level credential. Earner has knowledge of networking fundamentals, how devices communicate, cabling, network addressing and services, basics of configuring Cisco devices, troubleshooting and support of endpoints, networks, and users including diagnostics and documentation as a member of a help desk team, and basic wireless. Participated in up to 50 practice activities.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className={styles.cert}>
-                            <div className={styles.imageContainer}>
-                                <img src="https://images.credly.com/size/340x340/images/4e3d6f9f-55d7-4ea7-b0e6-f4d4ff543e22/image.png" alt="" />
-                            </div>
-                            <div className={styles.textContainer}>
-                                <p>
-                                Scrum Foundation Professional Certification holders have developed entry-level skills in Scrum that endorse their fundamental knowledge in this framework. They have demonstrated an understanding of the empirical Scrum pillars of transparency, inspection, and adaptation. Their primary focus is on the work of Sprint to make the best possible progress toward these goals.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                </div>
             </div>
         </div>
-        
     );
 }
 
