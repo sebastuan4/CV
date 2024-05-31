@@ -7,7 +7,7 @@ import WorkExp from "../modules/WorkExp/WorkExp";
 
 function App() {
   return(
-    <>
+    <>  
       <Header/>
       <About/>
       <Proyects/>

@@ -29,10 +29,15 @@
     color: var(--dark);
     border-radius: 5px;
     margin-left: 1svw;
-    width: clamp(3rem, 0.1rem + 10vw, 10vw);
+    width: clamp(2rem, 0.1rem + 10vw, 10vw);
     height: clamp(1rem, 0.1rem + 3vw, 2.5vw);
     font-size: clamp(0.5rem, 0.1rem + 1vw, 1.5vw);
     cursor: pointer;
+}
+
+.email button a{
+    color: var(--dark);
+    text-decoration: none;
 }
 
 .email input{
@@ -43,7 +48,7 @@
     border: 2px solid;
     border-radius: 10px;
     border-color: var(--extralight);
-    width: clamp(7rem, 0.1rem + 20vw, 20vw);
+    width: clamp(10rem, 0.1rem + 20vw, 20vw);
     height: clamp(1rem, 0.1rem + 3vw, 2.5vw);
     font-size: clamp(0.5rem, 0.1rem + 1vw, 1.5vw);
 }
@@ -59,4 +64,8 @@
     width: clamp(1rem, 0.1rem + 4vw, 2vw);
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+@media only screen and (max-width: 600px){
+    
 }

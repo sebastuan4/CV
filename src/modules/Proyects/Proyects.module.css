@@ -62,7 +62,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     padding: 1rem;
     font-size: clamp(0.6rem, 0.1rem + 1vw, 1.5vw);
     text-wrap: wrap;
@@ -80,17 +79,17 @@
 
 
 .callForAction{
+    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5vw;
-    width: 60%;
+    width: 100%;
     height: 3vw;
     background-color: var(--mid);
     color: var(--text);
     border: 1px solid transparent;
-    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
-    border-image-slice: 1;
+    border-color: var(--color);
 }
 
 @media only screen and (max-width: 750px){

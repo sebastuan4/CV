@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import githubIcon from "../../assets/Images/github.png"
 import linkedinIcon from "../../assets/Images/linkedin.png"
 import whatsappIcon from "../../assets/Images/whatsapp.png"
+import pdf from "../../assets/PDF/Sebastian_Alvarado_Rojas_CV.pdf"
 
 function Footer(){
 
@@ -25,12 +26,13 @@ function Footer(){
             <div className={styles.main}>
                     <div className={styles.email}>
                         <div>
-                            <h1>Email Me</h1>
+                            <h1>Contact and CV</h1>
                         </div>
                         <div>
                             <input disabled value="sebastuan4@gmail.com" type="text" />
                             <button onClick={copy}>{copied ? "Copied!" : "Copy"}</button>
                             <button onClick={sendEmail}>Email</button>
+                            <button><a href={pdf} download="Sebastian Alvarado Rojas CV.pdf" target='_blank'>CV</a></button>
                         </div>
                         <div className={styles.info}>
                             <p><a href="https://wa.me/50661956271"><img src={whatsappIcon} alt="" /></a></p>
