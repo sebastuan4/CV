@@ -37,12 +37,13 @@
 }
 
 .markedText {
-    white-space: normal; /* Allow text to wrap normally */
+    white-space: normal; 
+    color: var(--color);
 }
 
 .markedText mark {
-    display: inline-block; /* Make <mark> elements behave like inline-block */
-    margin-right: 5px; /* Add some space between marks */
+    display: inline-block;
+    margin-right: 5px;
 }
 
 .imageContainer{
