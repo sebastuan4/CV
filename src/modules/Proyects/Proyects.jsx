@@ -44,7 +44,7 @@ function Proyects(){
                         {descriptions[index].split('\n').map((line, index) => (
                             <p key={index}>{line}</p>
                         ))}
-                        <Link className={styles.callForAction} to="/dev">Want to know more?</Link>
+                       
                     </div>
             </div>
         </div>
