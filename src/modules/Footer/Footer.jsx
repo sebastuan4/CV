@@ -36,7 +36,7 @@ function Footer(){
                         </div>
                         <div className={styles.info}>
                             <p><a href="https://wa.me/50661956271"><img src={whatsappIcon} alt="" /></a></p>
-                            <p><a href="www.linkedin.com/in/sebastian-alvarado-rojas-654496149"><img src={linkedinIcon} alt="" /></a></p>
+                            <p><a href="https://www.linkedin.com/in/sebastian-alvarado-rojas-654496149/"><img src={linkedinIcon} alt="" /></a></p>
                             <p><a href="https://github.com/sebastuan4"><img src={githubIcon} alt="" /></a></p>
                         </div>
                     </div>
